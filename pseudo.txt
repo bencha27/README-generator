@@ -1,0 +1,22 @@
+✅Clone starter code
+✅Create/install files & folders
+✅Create inquirer prompts
+  Title
+  Description
+  Installation
+  Usage
+  License
+  How to Contribute
+  Tests
+  Questions
+  Table of contents
+Create inquirer responses
+  Title
+  Description
+  Installation
+  Usage
+  License
+  How to Contribute
+  Tests
+  Questions
+  Table of contents
