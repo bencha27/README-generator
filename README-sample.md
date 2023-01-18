@@ -37,4 +37,3 @@ This is how you can run tests on my project.
 
 If you have any questions, please contact me at [mrbenjamincha@gmail.com](mailto:mrbenjamincha@gmail.com).\
 [GitHub](https://github.com/bencha27)
-# README-generator
