@@ -1,40 +1,35 @@
-# My Project
+# README Generator
 
 ## Description
 
-This is what my project is about.
+This is a command-line application that can be used to quickly generate README files for projects.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [How to Contribute](#how-to-contribute)
-- [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
 
-This is how you install my project.
+- Clone the package.json and index.js files.
+- Open the directory with the cloned files in terminal.
+- Run `npm install` to install inquirer.
+- Run `node index.js`.
 
 ## Usage
 
-This is how you use my project.
+- Run `node index.js`.
+- Type your responses to the prompts. For license, use the arrow keys to select an option. Press enter to submit your response.
+- Note: Your responses will be applied to a template literal, so you can format your text using Markdown syntax accordingly.
+- After you answer all the prompts, a README.md file will be created in the same directory.
 
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## How to Contribute
-
-This is how you can contribute to my project.
-
-## Tests
-
-This is how you can run tests on my project.
-
 ## Questions
 
 If you have any questions, please contact me at [mrbenjamincha@gmail.com](mailto:mrbenjamincha@gmail.com).\
 [GitHub](https://github.com/bencha27)
-# README-generator

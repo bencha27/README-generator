@@ -19,13 +19,26 @@ const questions = [
 function writeToFile(fileName, {title, description, installation, usage, license, contribute, tests, email, github}) {
   const licenseBadge = generateLicenseBadge(license);
 
-  const readmeContent = 
-    `# ${title}
-    
-## Description
+  let readmeContent = ``;
+
+  if (title === "") {
+    readmeContent += `# Project Title
+
+`;
+  } else {
+    readmeContent += `# ${title}
+
+`;
+  }
+
+  if (description !== "") {
+    readmeContent += `## Description
 ${description}
 
-## Table of Contents
+`;
+  }
+
+  readmeContent += `## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -33,24 +46,54 @@ ${description}
 - [Tests](#tests)
 - [Questions](#questions)
 
-## Installation
+`;
+
+  if (installation !== "") {
+    readmeContent += `## Installation
 ${installation}
 
-## Usage
+`
+  }
+
+  if (usage !== "") {
+    readmeContent += `## Usage
 ${usage}
 
-## License
+`;
+  }
+
+  if (licenseBadge !== "") {
+    readmeContent += `## License
 ${licenseBadge}
 
-## How to Contribute
+`;
+  }
+
+  if (contribute !== "") {
+    readmeContent += `## How to Contribute
 ${contribute}
 
-## Tests
+`;
+  }
+
+  if (tests !== "") {
+    readmeContent += `## Tests
 ${tests}
 
-## Questions
+`;
+  }
+
+  if (email !== "" && github !== "") {
+    readmeContent += `## Questions
 If you have any questions, please contact me at [${email}](mailto:${email}).\\
-[GitHub](https://github.com/${github})`
+[GitHub](https://github.com/${github})`;
+  } else if (email !== "" && github === "") {
+    readmeContent += `## Questions
+If you have any questions, please contact me at [${email}](mailto:${email}).`;
+  } else if (email === "" && github !== "") {
+    readmeContent += `## Questions
+[GitHub](https://github.com/${github})`;
+  }
 
   fs.writeFile(fileName, readmeContent, (err) => 
      err ? console.error(err) : console.log("Successfully created README.md!"));
@@ -84,7 +127,7 @@ function init() {
         name: "license",
         type: "list",
         message: questions[4],
-        choices: ["MIT License", "Apache License 2.0", "ISC License", "GNU General Public License v3.0"],
+        choices: ["MIT License", "Apache License 2.0", "ISC License", "GNU General Public License v3.0", "None"],
       },
       {
         name: "contribute",
@@ -121,7 +164,7 @@ function generateLicenseBadge(license) {
     case "GNU General Public License v3.0":
       return "[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
     default:
-      return "None";
+      return "";
   }
 }
 
