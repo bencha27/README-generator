@@ -20,6 +20,8 @@ This is a command-line application that can be used to quickly generate README f
 
 ## Usage
 
+[Demo video](https://drive.google.com/file/d/14F5Q1R01z16Ahez-gx9o9hPPy381UmUq/view)
+
 - Run `node index.js`.
 - Type your responses to the prompts. For license, use the arrow keys to select an option. Press enter to submit your response.
 - Note: Your responses will be applied to a template literal, so you can format your text using Markdown syntax accordingly.
