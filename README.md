@@ -16,7 +16,6 @@ This is a command-line application that can be used to quickly generate README f
 - Clone the package.json and index.js files.
 - Open the directory with the cloned files in terminal.
 - Run `npm install` to install inquirer.
-- Run `node index.js`.
 
 ## Usage
 
@@ -25,7 +24,7 @@ This is a command-line application that can be used to quickly generate README f
 - Run `node index.js`.
 - Type your responses to the prompts. For license, use the arrow keys to select an option. Press enter to submit your response.
 - Note: Your responses will be applied to a template literal, so you can format your text using Markdown syntax accordingly.
-- After you answer all the prompts, a README.md file will be created in the same directory.
+- After you answer all the prompts, a `README.md` file will be created in the `dist` directory.
 
 ## License
 

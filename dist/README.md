@@ -1,27 +1,24 @@
-# My Project
+# Team Profile Generator
 
 
 ## Description
-This is a description of my project.
+This is a Node.js command-line application that generates an HTML webpage that displays employee information for a software engineering team.
 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [How to Contribute](#how-to-contribute)
 - [Questions](#questions)
 
 ## Installation
-This is how you install my project.
+- Clone the repository.\\- Install Node.js if it is not installed on your device.\\- Open the directory with the cloned files in terminal.\\- Run \`npm install\` to install inquirer.
 
 ## Usage
-This is how you can use my project.
+- In terminal, from the root directory, run \`node index.js\`.\\- Type your responses to the prompts. You must provide all the requested information.\\- When you have entered information for all employees, select "None" when asked to choose a team member to add.\\- When you are finished, a \`team.html\` file will be created in the \`dist\` directory.
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## How to Contribute
-This is how you can contribute to my project.
 
 
 ## Questions
